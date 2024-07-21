@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FatherTranslator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>FatherTranslator</h1>
+            <button id="settings-btn" class="settings-btn">
+                <img src="assets/settings.svg" alt="Settings">
+            </button>
+        </header>
+        <main>
+            <textarea id="source-text" placeholder="Enter text to translate"></textarea>
+            <div class="controls">
+                <select id="target-language">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                    <option value="it">Italian</option>
+                    <option value="ja">Japanese</option>
+                    <option value="ko">Korean</option>
+                    <option value="zh">Chinese</option>
+                </select>
+                <button id="translate-btn">Translate</button>
+            </div>
+            <textarea id="translated-text" readonly placeholder="Translation will appear here"></textarea>
+        </main>
+    </div>
+
+    <div class="settings-page" id="settings-page">
+        <h2>Settings</h2>
+        <form id="settings-form">
+            <label for="model-provider">Model Provider:</label>
+            <select id="model-provider" name="model-provider">
+                <option value="openai">OpenAI</option>
+                <option value="groq">Groq</option>
+            </select>
+            <label for="api-key">API Key:</label>
+            <input type="text" id="api-key" name="api-key">
+            <label for="api-host">API Host:</label>
+            <input type="text" id="api-host" name="api-host">
+            <label for="model">Model:</label>
+            <select id="model" name="model"></select>
+            <label for="temperature">Temperature:</label>
+            <input type="number" id="temperature" name="temperature" step="0.1" min="0" max="1" value="0">
+            <label for="top-p">Top P:</label>
+            <input type="number" id="top-p" name="top-p" step="0.1" min="0" max="1" value="0">
+            <label for="presence-penalty">Presence Penalty:</label>
+            <input type="number" id="presence-penalty" name="presence-penalty" step="0.1" min="0" max="1" value="0">
+            <label for="frequency-penalty">Frequency Penalty:</label>
+            <input type="number" id="frequency-penalty" name="frequency-penalty" step="0.1" min="0" max="1" value="0">
+            <label for="system-prompt">System Prompt:</label>
+            <textarea id="system-prompt" name="system-prompt" rows="3">You are a professional, authentic machine translation engine.</textarea>
+            <div class="settings-buttons">
+                <button type="button" id="save-settings">Save</button>
+                <button type="button" id="cancel-settings">Cancel</button>
+                <button type="button" id="default-settings">Restore Defaults</button>
+            </div>
+        </form>
+    </div>
+    <div class="dim-background" id="dim-background"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
