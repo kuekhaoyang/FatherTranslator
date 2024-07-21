@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'model-provider': 'openai',
         'api-key': '',
         'api-host': 'https://api.openai.com/v1',
-        'model': 'gpt-4o-mini',
+        'model': 'gpt-4o-mini-2024-07-18',
         'temperature': 0.7,
         'top-p': 1.0,
         'presence-penalty': 0.0,
