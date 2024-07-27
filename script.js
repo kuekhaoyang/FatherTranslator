@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'top-p': 1.0,
         'presence-penalty': 0.0,
         'frequency-penalty': 0.0,
-        'system-prompt': 'You are a helpful assistant.'
+        'system-prompt': 'You are a professional, authentic machine translation engine.'
     };
 
     const modelOptions = {
