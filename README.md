@@ -4,7 +4,7 @@ FatherTranslator is a web-based translation tool that utilizes AI models to tran
 
 ## Demo
 
-You can try out the live demo of FatherTranslator at: [FatherTranslator Demo](fathertranslator.fatherxtreme.cloudns.be)
+You can try out the live demo of FatherTranslator at: [Demo](https://fathertranslator.fatherxtreme.cloudns.be/)
 
 ## Features
 
